@@ -1,10 +1,10 @@
 
-# Readme Generator
+# dwadawd
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This console application makes you a professional readme, base on user input.
+dwadawd
 
 ## Table of Contents
 
@@ -16,11 +16,11 @@ This console application makes you a professional readme, base on user input.
 
 ## Installation
 
-Requires inquirer 8.0.8 to be installed
+dwadawd
 
 ## Usage
 
-Initiate with the command '''node index.js'''
+dawdawd
 
 ## License 
 
@@ -28,17 +28,17 @@ This application is cover under the: MIT License
 
 ## Contributing
 
-No contributions yet, reach out to contribute
+dwaadawd
 
 ## Tests
 
-N/A
+dwadawd
 
 ## Questions
 
 For questions, contact me at:
- - Github: [Github](https://github.com/Snoopawoo)
- - Email: reki.csaba@gmail.com
- - If you have any questions, reach out to me on the above ways.
+ - Github: [Github](https://github.com/dawwad)
+ - Email: wadawd
+ - wadawd
 
     

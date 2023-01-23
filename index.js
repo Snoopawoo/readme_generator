@@ -1,8 +1,5 @@
 const fs = require("fs");
-const path = require("path");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
-let readmedata;
 
 // array of questions for user
 inquirer
@@ -67,6 +64,7 @@ inquirer
     },
   ])
   .then(function (answer) {
+    //generates README.md in markdown language based on input
     const license = answer.license;
     let licenseUrl;
  
@@ -133,20 +131,9 @@ For questions, contact me at:
  - Email: ${answer.questionsemail}
  - ${answer.questionsinst}
 
-    `, (err) =>
+    `, 
+    //gives an error message if the readme was not created or logs "Readme Created!" if it was successfull
+    (err) =>
       err ? console.error(err) : console.log('Readme Created!')
     );
 });
-
-// // function to write README file
-// function writeToFile(fileName, data) {
-//   fs.writeFile("README.md", readmedata, (err) =>
-//     err ? console.error(err) : console.log("Success!")
-//   );
-// }
-
-// // function to initialize program
-// function init() {}
-
-// // function call to initialize program
-// init();
