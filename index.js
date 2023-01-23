@@ -62,8 +62,29 @@ inquirer
     },
   ])
   .then(function (answer) {
-    readmedata = answer;
-  });
+
+    fs.writeFile('README.md', `
+    # ${answer.title}
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    ## Description
+    ${answer.description}
+    ## Table of Contents
+     - ${answer.contents}
+    ## Installation
+    ${answer.installation}
+    ## Usage
+    ${answer.usage}
+    ## Contributing
+    ${answer.contribution}
+    ## Tests
+    ${answer.tests}
+    ## Questions
+    ${answer.questions}
+
+    `, (err) =>
+      err ? console.error(err) : console.log('Readme Created!')
+    );
+});
 
 // // function to write README file
 // function writeToFile(fileName, data) {
